@@ -8,7 +8,7 @@ var password = document.getElementById("Password").value;
 
 if ( username == "niharbiradar" && password == "12345678"){
     alert ("Login successfully");
-    window.location = "success.html"; // Redirecting to other page.
+    window.location = "mainPage.html"; // Redirecting to other page.
     return false;
 }
 
