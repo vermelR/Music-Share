@@ -1,0 +1,30 @@
+{
+  "name": "music-sm",
+  "version": "1.0.0",
+  "description": "music social media",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev: ": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rohan Desai Nihar Biradar",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vermelR/BeMusic.git"
+  },
+  "keywords": [
+    "Music",
+    "Social",
+    "Media"
+  ],
+  "bugs": {
+    "url": "https://github.com/vermelR/BeMusic/issues"
+  },
+  "homepage": "https://github.com/vermelR/BeMusic#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
