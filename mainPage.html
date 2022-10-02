@@ -11,60 +11,101 @@
   </style>
 </head>
 
-<body>
-  <img src="pic_trulli.jpg" alt="Trulli" width="100" height="33">
-  <!DOCTYPE html>
-<html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    
 
-
- /* styling */
-body {
-  font-family: "Lato", sans-serif;
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
-.sidenav {
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 8px 0;
+.flex-item + .flex-item {
+  margin-left: 10px;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #064579;
-}
-
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+    .topnav-centered a {
+      margin-top: 15px;
+      background-color: #0066FF;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  </style>
   </head>
-    <body>
-      <div class="sidenav">
-        <a href="#Friends">Friends</a>
-        <a href="#Discovary">Discovery</a>
-      </div>
-    </body>
-  </html> 
-</body>
+  <body>
+  
+  <!-- Top navigation -->
+  <div class="topnav">
+  
+    <!-- Centered link -->
+    <div class="topnav-centered">
+      <a href="#discovery" class="button">Discovery</a>
+      <a href="#friends" class="button">Friends</a>
+    </div>
+
+    <div class="topnav-right">
+      <a href="#logoff">Log Off</a>
+      <a href="#Settings">Settings</a>
+    </div>
+ 
+      <a href="#search">Search</a>
+    
+  </div>
+  </body>
