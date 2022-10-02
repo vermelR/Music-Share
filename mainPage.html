@@ -33,6 +33,21 @@
     text-decoration: none;
     font-size: 17px;
   }
+
+  .topnav-white {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .topnav-white a {
+    float: left;
+    color: #1206f8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
   
   .topnav a:hover {
     background-color: #ddd;
@@ -64,27 +79,33 @@
     }
     
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
+
 
 .flex-item + .flex-item {
   margin-left: 10px;
 }
 
-    .topnav-centered a {
-      margin-top: 15px;
-      background-color: #0066FF;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer;
-    }
+.flex-parent {
+  display: flex;
+  float: right;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+button.margin-right {
+  margin-right: 20px;
+}
+
+#ip2 {
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;    
+}
+
   }
   </style>
   </head>
@@ -92,25 +113,22 @@
   
   <!-- Top navigation -->
   <div class="topnav">
-  
-    <!-- Centered link -->
-    <div class="topnav-centered">
-      <a href="#discovery" class="button">Discovery</a>  
-      <a href="#friends" class="button">Friends</a>
-    </div>
 
 
     <div class="topnav-right">
+      <<a href="#Settings">Settings</a>>
       <a href="#logoff">Log Off</a>
-      <a href="#Settings">Settings</a>
     </div>
  
-      <a href="#search">Search</a>
-    
+    <input type="text" placeholder="Search Username" id="ip2"/>
+
   </div>
   </body>
 
-
+  <div class="flex-parent jc-center">
+    <button type="submit" class="green margin-right">Friends</button>
+    <button type="submit" class="magenta">Discovery</button>
+  </div>
 
   <div style = "position:relative; left:350px; top:100px; background-color:lightblue;">
     <img src="https://www.tutorialspoint.com/html/images/test.png" alt="Simply Easy Learning" width="500" height="350">
